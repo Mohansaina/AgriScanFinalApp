@@ -1,0 +1,56 @@
+// This script creates a simple image of a pesticide label for testing purposes
+const fs = require('fs');
+const path = require('path');
+
+// Sample label content
+const labelContent = `
+SAMPLE PESTICIDE LABEL FOR TESTING
+
+PRODUCT NAME: AgriGuard Glyphosate 41% SL
+
+ACTIVE INGREDIENT:
+Glyphosate (N-(phosphonomethyl)glycine) 41% SL
+
+OTHER INGREDIENTS: 59%
+Contains surfactants and other inert ingredients
+
+DIRECTIONS FOR USE:
+RECOMMENDED DOSAGE: 1.5 L/hectare
+
+CROPS:
+- Wheat
+- Corn
+- Soybeans
+- Cotton
+- Rice
+- Potatoes
+
+APPLICATION:
+Apply evenly across field using standard spraying equipment.
+Do not apply during windy conditions or when rain is expected within 4 hours.
+
+SAFETY PERIOD:
+7 days before harvest
+
+STORAGE:
+Store in a cool, dry place away from direct sunlight.
+Keep container tightly closed when not in use.
+
+WARNING:
+- Keep out of reach of children
+- Wear protective clothing when handling
+- Avoid contact with skin and eyes
+- Do not breathe spray mist
+
+MANUFACTURER:
+AgriChem Solutions Inc.
+123 Farm Road, Agriculture City
+Phone: (555) 123-4567
+Website: www.agrichem-solutions.com
+`;
+
+// Create a simple text file that can be used as a sample image
+fs.writeFileSync(path.join(__dirname, 'pesticide_label_sample.txt'), labelContent);
+
+console.log('Sample pesticide label created at:', path.join(__dirname, 'pesticide_label_sample.txt'));
+console.log('For actual image testing, please use a real pesticide label image.');

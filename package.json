@@ -1,0 +1,18 @@
+{
+  "name": "agriscantotal",
+  "version": "1.0.0",
+  "description": "AgriScan is a complete web application designed to help farmers safely use pesticides by scanning labels, calculating doses, and checking weather safety conditions.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.12.2"
+  }
+}
